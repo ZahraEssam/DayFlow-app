@@ -1,0 +1,213 @@
+/* Basic Style but Softt */
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#siteTitle{
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    color:#7A6651;/* warm Cafe*/
+    margin-bottom:20px;
+    font-family:'poppins', cursive;
+    background:#F8F4EF;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1)
+}
+
+body {
+  background-color: #f8f5f2; /* lightBeige background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  color: #4b3d33; /* warmBrown text */
+}
+
+/* ---------- Titles ---------- */
+h3 {
+  margin-bottom: 6px;
+  font-size: 18px;
+  color: #3e2f23; /*Waarm brown*/
+}
+
+/* Buttons  */
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+  margin: 4px;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* Add & Remove All Buttons */
+#addBtn {
+  background-color: #d4a373; /* beige brown */
+  color: #fff;
+}
+#addBtn:hover {
+  background-color: #c48b58;
+}
+
+#removeAllBtn {
+  background-color: #e5989b; /* softPink */
+  color: #fff;
+}
+#removeAllBtn:hover {
+  background-color: #d9797e;
+}
+
+/* Inputs */
+.inputs {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 10px; 
+  margin-top: 30px;
+}
+
+input {
+  width: 90%;
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+textarea {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  border: 5px solid #ccc;
+  font-size: 16px;
+}
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/* Tasks Container  */
+.outputs {
+  background-color: #fffdf9;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 25px;
+  box-shadow: 0 4px 12px rgba(150, 120, 90, 0.15);
+}
+
+/*Single Task Box */
+.taskBox {
+  background-color: #f8efe6;
+  border-left: 6px solid #d4a373;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin: 10px auto;
+  width: 320px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.taskBox:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(180, 150, 110, 0.2);
+}
+
+/* Task text */
+.taskBox h3 {
+  color: #5a4636;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.taskBox p {
+  color: #5e4c3a;
+  font-size: 13px;
+  line-height: 1.4;
+  overflow: hidden;
+  max-height: 2.8em; /*show two lines only */
+  text-overflow: ellipsis;
+}
+
+.taskBox p.expanded {
+
+    max-height: 2.8em; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4;
+
+}
+
+/* Inner Buttons */
+.editBtn {
+  background-color: #f7d7a3;
+  color: #4b3d33;
+}
+.editBtn:hover {
+  background-color: #f3ca86;
+}
+
+.removeBtn {
+  background-color: #f4a3a3; /*Pinkk*/
+  color: #fff;
+}
+.removeBtn:hover {
+  background-color: #e28080;
+}
+
+.showMoreBtn {
+  background-color: #decbb7;
+  color: #333;
+}
+
+.saveBtn {
+  background-color: #c3d898;
+  color: #3b3b2e;
+}
+
+.cancelBtn {
+  background-color: #d2c1b0;
+  color: #4b3d33;
+}
+.taskHeader {
+  display: flex;
+  justify-content:end; 
+  align-items: center;
+}
+.editBtn {
+  display: flex;
+  justify-content:end; 
+  align-items: center;
+}
+.AddRemovaAllBtns{
+    display: flex;
+  justify-content:center;
+}
+.taskBtns {
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
+  margin-top: 8px;
+}
+
+.taskBtns button {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
